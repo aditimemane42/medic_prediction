@@ -1,10 +1,12 @@
-```python
 from flask import Flask, request, render_template_string
 import joblib
 import pandas as pd
 import os
 
 app = Flask(__name__)
+
+MODEL_PATH = "xgboost_model.pkl"
+model = joblib.load(MODEL_PATH)
 
 # ============================================================
 # LOAD MODEL

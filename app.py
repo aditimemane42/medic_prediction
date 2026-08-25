@@ -10,7 +10,7 @@ app = Flask(__name__)
 # LOAD MODEL
 # ============================================================
 
-MODEL_PATH = "xgboost_model(1).pkl"
+MODEL_PATH = "xgboost_model.pkl"
 
 try:
     model = joblib.load(MODEL_PATH)
